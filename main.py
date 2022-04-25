@@ -3,13 +3,13 @@ import discord
 from discord.ext import commands
 import os
 
-#defines client
-client = commands.Bot(command_prefix=f"{input1}", self_bot=True)
-
 #defines the input
 os.system("cls")
 input1 = input("Prefix > ")
 input2 = input("Token > ")
+
+#defines client
+client = commands.Bot(command_prefix=f"{input1}", self_bot=True)
 
 #when the selfbot is online
 @client.event
